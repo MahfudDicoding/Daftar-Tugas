@@ -17,6 +17,7 @@ export default function ListItem( {text, completed, onToggle} ) {
             checked={completed}
             onChange={handleCheckBoxChange} // ✅ Gunakan handler baru
             style={{ marginRight: "8px" }}
+            className="accent-blue-600"
         />
         <span onClick={onToggle}>{text}</span> {/* ✅ Pindah onClick ke span */}
         </li>
